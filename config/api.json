@@ -1,0 +1,10 @@
+{
+    "backendURL": "",
+    "timeout": 3000,
+    "https": true,
+    "baseURL": "http://localhost:8080/api",
+    "maxContentLength": 10000,
+    "maxRedirects": 5,
+    "withCredentials": true,
+    "responseType": "json"
+}

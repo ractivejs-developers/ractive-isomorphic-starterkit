@@ -1,0 +1,38 @@
+{{>navbar}}
+
+{{#with @shared.$route as $route }}
+
+{{#if $route.match('/page1')}}
+<div class="jumbotron" fade-in-out>
+    <h1 class="display-3">{{message}} - {{$route.pathname}}</h1>
+    <p class="lead">Page1 awesome content</p>
+    <hr class="my-4">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/page2" role="button">Page 2</a>
+    </p>
+</div>
+{{elseif $route.match('/page2')}}
+<div class="jumbotron" fade-in-out>
+    <h1 class="display-3">{{message}} - {{$route.pathname}}</h1>
+    <p class="lead">Page2 awesome content</p>
+    <hr class="my-4">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+    </p>
+</div>
+{{elseif $route.match('/')}}
+<div class="jumbotron" fade-in-out>
+    <h1 class="display-3">{{message}} - {{$route.pathname}}</h1>
+    <p class="lead">Home page awesome content</p>
+    <hr class="my-4">
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/page1" role="button">Page 1</a>
+    </p>
+</div>
+{{else}}
+<div class="jumbotron" fade-in-out>
+    <h1 class="display-3">404 Page - {{$route.pathname}}</h1>
+</div>  
+{{/if}}
+
+{{/with}}

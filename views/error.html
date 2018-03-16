@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+        <title>{{ err.name }}</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link rel="apple-touch-icon" href="/img/favicon.png">
+
+        <link rel="manifest" href="/manifest.json">
+
+        <style>
+            body {
+                max-width: 800px;
+                padding: 1em;
+                margin: 0 auto;
+                box-sizing: border-box;
+            }
+            h1 {
+                color: rgb(170,30,30);
+                border-bottom: 1px solid #aaa;
+                padding: 0 0 0.5em 0;
+                margin: 1em 0;
+            }
+            pre {
+                font-family: Menlo, monospace;
+                font-size: 14px;
+                line-height: 1.2;
+                overflow-x: auto;
+                white-space: pre-wrap;
+            }
+            .stack {
+                font-size: 12px;
+                color: #999;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{ err.name }}</h1>
+        <pre>{{ err.message }}</pre>
+        <pre class="stack">{{ err.stack }}</pre>
+    </body>
+</html>

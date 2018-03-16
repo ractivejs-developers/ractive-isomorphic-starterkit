@@ -1,0 +1,10 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#5CB85C",
+	"name": "Ractive Isomorphic Starterkit",
+	"short_name": "RIS",
+	"description": "",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": []
+}

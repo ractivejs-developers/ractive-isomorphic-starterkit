@@ -1,0 +1,15 @@
+{
+    "port": 8080,
+    "session": {
+        "name": "_sid",
+        "secret": "qwerty123",
+        "resave": false,
+        "rolling": false,
+        "saveUninitialized": false,
+        "cookie": {
+            "httpOnly": true,
+            "secure": false,
+            "sameSite": true
+        }
+    }
+}
