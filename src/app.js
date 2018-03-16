@@ -19,7 +19,7 @@ const options = {
         navbar: require('./templates/parsed/navbar')
     },
     transitions: {
-        fade: require('ractive-transitions-fade'),
+        fade: require('ractive-transitions-fade')
     },
     data: {
         message: 'Hello world'

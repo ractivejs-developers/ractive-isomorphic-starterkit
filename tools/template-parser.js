@@ -2,7 +2,8 @@
 
 const fs = require('fs'),
     path = require('path'),
-    glob = require('glob');
+    glob = require('glob'),
+    serialize = require('serialize-javascript');
 
 const Ractive = require('ractive');
 
@@ -34,7 +35,7 @@ new Promise((resolve, reject) => {
 
                 console.log('Template ', i, template);
 
-                const parsed = `module.exports = ${JSON.stringify(Ractive.parse(template, options))}`,
+                const parsed = `module.exports = ${serialize(Ractive.parse(template, options))}`,
                     fileInfo = path.parse(file);
 
                 console.log('Parsed ', i, parsed);
