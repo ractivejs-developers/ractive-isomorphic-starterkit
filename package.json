@@ -1,6 +1,6 @@
 {
-  "name": "ractive-realworld-example-app",
-  "version": "0.2.1",
+  "name": "ractive-isomorphic-starterkit",
+  "version": "0.3.0",
   "description": "",
   "main": "server.js",
   "directories": {
@@ -14,19 +14,16 @@
     "dev": "node server.js",
     "start": "env NODE_ENV=production node server.js"
   },
-  "config": {
-    "port": "8080"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PaulMaly/realworld-starter-kit.git"
+    "url": "git+https://github.com/ractivejs-developers/ractive-isomorphic-starterkit.git"
   },
   "author": "Paul Maly",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PaulMaly/realworld-starter-kit/issues"
+    "url": "https://github.com/ractivejs-developers/ractive-isomorphic-starterkit/issues"
   },
-  "homepage": "https://github.com/PaulMaly/realworld-starter-kit#readme",
+  "homepage": "https://github.com/ractivejs-developers/ractive-isomorphic-starterkit#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "compression": "^1.7.1",
