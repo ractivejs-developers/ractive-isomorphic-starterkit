@@ -1,3 +1,5 @@
+const serialize = require('serialize-javascript');
+
 const run = require('../src/app');
 
 module.exports = () => (req, res, next) => {
@@ -13,7 +15,7 @@ module.exports = () => (req, res, next) => {
 
 		app.teardown();
 		
-		data = JSON.stringify(data || {});
+		data = serialize(data || {});
 		error = error && error.message ? error.message : error;
 		
 		res.render('index', { meta, content, styles, data, error });
